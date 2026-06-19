@@ -210,12 +210,12 @@ h1{
   border-radius:30px;
   overflow:hidden;
   position:relative;
-  background:
-    linear-gradient(to top,rgba(0,0,0,.75),transparent 55%),
-    radial-gradient(circle at 25% 20%,rgba(255,255,255,.95),transparent 12%),
-    radial-gradient(circle at 75% 75%,rgba(255,0,110,.75),transparent 28%),
-    radial-gradient(circle at 25% 80%,rgba(0,130,255,.45),transparent 30%),
-    linear-gradient(135deg,#121212,#050505);
+
+  background-image:url("./mainph.webp");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
   border:1px solid rgba(255,255,255,.1);
   box-shadow:0 0 50px rgba(255,0,120,.14);
 }
@@ -224,8 +224,14 @@ h1{
   content:"";
   position:absolute;
   inset:0;
-  background-image:url("https://grainy-gradients.vercel.app/noise.svg");
-  opacity:.12;
+
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,.75),
+    transparent 55%
+  );
+
+  z-index:1;
 }
 
 .cover-content{
